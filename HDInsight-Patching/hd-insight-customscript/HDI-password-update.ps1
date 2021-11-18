@@ -60,8 +60,6 @@ param (
       
       $password = Scramble-String $password
       
-      write-host "password is :::" $password
-      
         $Bytes = [System.Text.Encoding]::Unicode.GetBytes($password)
         $EncodedText =[Convert]::ToBase64String($Bytes)
     
